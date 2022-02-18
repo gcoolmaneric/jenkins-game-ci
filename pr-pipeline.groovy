@@ -97,22 +97,13 @@ def machine_user_name="your_user_name"
 def build_repo="git@github.com:gcoolmaneric/jenkins-game-ci.git"
 
 // Your Unity Version
-// Ex: "2020.3.15f2"
+// Ex: "2020.1.15f2"
 def unity_version="<Your unity verison>"
 
 
 pipeline {
    // Master Jenkins
    agent any
-
-   // Slave Jenkins
-   // Setup Slave node and assign it by label
-   // This will force this pipeline to be running on specifc Jenkins Slave by label
-   // agent {
-   //    node {
-   //      label 'slave-macmini'
-   //    }
-   //  }
 
    // Initialize environment params
    environment{
